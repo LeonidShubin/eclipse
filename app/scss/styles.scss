@@ -1,0 +1,10 @@
+@import 'helpers/reset';
+@import 'helpers/variables';
+@import 'helpers/typography';
+
+.row {
+  padding: 0 15px;
+  max-width: 1190px;
+  height: 300px;
+  box-sizing: border-box;
+}
