@@ -1,5 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
 
-.app {
-    font-family: 'Roboto', sans-serif;
-}
+.white-color {
+    color: $white-color;
+  }
+  
+  .brand-color {
+    color: $brand-color;
+  }
+  
+  .black-color {
+    color: $black-color;
+  }
+  
+  .dark-color {
+    color: $dark-color;
+  }
+  
+  .beige-color {
+    color: $beige-color;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .text-1 {
+    font-size: 12px;
+  }
+  
+  .text-2 {
+    font-size: 14px;
+  }
+  
+  .text-3 {
+    font-size: 15px;
+  }
+  
+  .text-4 {
+    font-size: 18px;
+  }
+  
+  .title-1 {
+    font-size: 20px;
+  }
+  
+  .title-2 {
+    font-size: 22px;
+  }
+  
+  .title-3 {
+    font-size: 25px;
+  }
+  
+  .heading-1 {
+    font-size: 30px;
+  }
+  
+  .heading-2 {
+    font-size: 32px;
+  }
+  
+  .heading-3 {
+    font-size: 35px;
+  }
+  
+  .headline-1 {
+    font-size: 50px;
+  }
+  
+  .headline-2 {
+    font-size: 130px;
+  }

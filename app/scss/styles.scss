@@ -1,10 +1,22 @@
 @import 'helpers/reset';
 @import 'helpers/variables';
 @import 'helpers/typography';
+@import 'helpers/components.scss';
 
-.row {
-  padding: 0 15px;
-  max-width: 1190px;
-  height: 300px;
-  box-sizing: border-box;
+@import 'sections/header';
+
+body {
+  &,
+  & * {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    &::selection {
+      background-color: rgba(adjust-hue($brand-color, 310deg), 0.5);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

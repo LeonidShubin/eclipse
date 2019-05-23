@@ -10,7 +10,7 @@
 -------------------------------------------------------------------------------*/
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -201,11 +201,249 @@ input[type=button] {
 .clearfix {
   zoom: 1; }
 
-.app {
-  font-family: 'Roboto', sans-serif; }
+.white-color {
+  color: #fff; }
 
-.row {
-  padding: 0 15px;
-  max-width: 1190px;
-  height: 300px;
+.brand-color {
+  color: #cb0e17; }
+
+.black-color {
+  color: #000; }
+
+.dark-color {
+  color: #333; }
+
+.beige-color {
+  color: #e8e9e3; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
+
+.text-1 {
+  font-size: 12px; }
+
+.text-2 {
+  font-size: 14px; }
+
+.text-3 {
+  font-size: 15px; }
+
+.text-4 {
+  font-size: 18px; }
+
+.title-1 {
+  font-size: 20px; }
+
+.title-2 {
+  font-size: 22px; }
+
+.title-3 {
+  font-size: 25px; }
+
+.heading-1 {
+  font-size: 30px; }
+
+.heading-2 {
+  font-size: 32px; }
+
+.heading-3 {
+  font-size: 35px; }
+
+.headline-1 {
+  font-size: 50px; }
+
+.headline-2 {
+  font-size: 130px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 16px; } }
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .image img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.button {
+  padding: 12px 9px;
+  width: 230px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(1, 1, 1, 0.75);
+  text-transform: uppercase;
+  background-color: #cb0e17;
+  font-size: 15px;
+  color: #fff;
+  transition: background-color 0.2s, box-shadow 0.2s; }
+  .button:hover {
+    background-color: #f02630; }
+  .button:focus {
+    outline: none; }
+  .button:active {
+    box-shadow: 0 0 2px 0 rgba(1, 1, 1, 0.75); }
+
+.form {
+  position: relative;
+  filter: drop-shadow(2px 1px 10px rgba(1, 2, 2, 0.5)); }
+  .form__body {
+    width: 280px;
+    padding: 50px 20px 30px 22px;
+    border: 1px solid #cb0e17;
+    background: #fff;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0%, 55% 0, 50% 13px, 45% 0); }
+    .form__body:before, .form__body:after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 1px;
+      top: 6px;
+      left: calc(50% - 19px);
+      position: absolute;
+      background-color: #cb0e17;
+      transform: rotate(43deg); }
+    .form__body:after {
+      left: calc(50% - 3px);
+      transform: rotate(-43deg); }
+
+.input__element {
+  width: 230px;
+  padding: 11px 11px 12px 30px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: border 0.2s;
+  font-size: 14px;
+  font-weight: 300; }
+  .input__element:focus {
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    outline: none; }
+  .input__element::placeholder {
+    font-size: 14px;
+    font-weight: 300; }
+
+.input:before {
+  position: relative;
+  top: 25px;
+  left: 16px;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  background: url(../../images/helpers/arrow.png) center/cover no-repeat; }
+
+.header {
+  padding: 30px 0 57px 0;
+  background: #bcaea3 url(../../images/header/header-bg.png) center/cover no-repeat; }
+  .header__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 67px; }
+    .header__top .logo {
+      width: 158px;
+      height: 215px; }
+      .header__top .logo__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../../images/header/logo.png) center/cover no-repeat; }
+    .header__top .info {
+      max-width: 447px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right; }
+      .header__top .info .languages {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+        box-sizing: border-box;
+        margin-bottom: 30px; }
+        .header__top .info .languages .lang {
+          font-weight: 300;
+          text-transform: capitalize;
+          cursor: pointer; }
+          .header__top .info .languages .lang--active {
+            font-weight: bold; }
+      .header__top .info .title-3 {
+        margin-bottom: 10px;
+        line-height: 1.2; }
+      .header__top .info .heading-3 {
+        margin-bottom: 3px; }
+      .header__top .info .title-1 {
+        margin-bottom: 29px; }
+  .header__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .header__main .achivments {
+      max-width: 725px; }
+      .header__main .achivments .title-2 {
+        margin-bottom: 9px; }
+      .header__main .achivments .heading-1 {
+        margin-bottom: 9px;
+        font-weight: 300; }
+      .header__main .achivments .headline-1 {
+        margin-bottom: 109px; }
+      .header__main .achivments__list {
+        display: flex;
+        flex-wrap: wrap; }
+    .header__main .fob {
+      margin-right: 53px; }
+      .header__main .fob .text-3 {
+        margin-bottom: 26px;
+        font-weight: 300;
+        line-height: 1.75; }
+      .header__main .fob .title-2 {
+        margin-bottom: 24px;
+        font-weight: 300; }
+      .header__main .fob .button {
+        margin-top: 32px; }
+  .header .achivment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 30px;
+    text-align: center; }
+    .header .achivment .image {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 14px; }
+
+@media (max-width: 768px) {
+  .header__top {
+    justify-content: center; }
+    .header__top .info {
+      align-items: center;
+      max-width: 100%;
+      text-align: center; }
+  .headline-1 {
+    font-size: 40px; }
+  .achivments__list {
+    justify-content: center; }
+  .fob {
+    margin: 0 auto; } }
+
+body,
+body * {
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box; }
+  body::selection,
+  body *::selection {
+    background-color: rgba(203, 14, 181, 0.5); }
+
+a {
+  text-decoration: none;
+  color: inherit; }
