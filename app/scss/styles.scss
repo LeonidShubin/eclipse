@@ -1,9 +1,10 @@
 @import 'helpers/reset';
 @import 'helpers/variables';
 @import 'helpers/typography';
-@import 'helpers/components.scss';
+@import 'helpers/components';
 
 @import 'sections/header';
+@import 'sections/horse';
 
 body {
   &,
