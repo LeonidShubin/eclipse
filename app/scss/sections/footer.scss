@@ -1,0 +1,55 @@
+.footer  {
+    padding-top: 34px;
+    background: #bcaea3
+      url(https://lh3.google.com/u/0/d/1W-W841tTUADsHTHSiR7QS8FsSbxeVKxJ=w1356-h633-iv1)
+      center/cover no-repeat;
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .contacts {
+        margin-bottom: 100px;
+        margin-right: 30px;
+        text-align: right;
+        .title-3 {
+          font-weight: 500;
+        }
+        .adress {
+          margin-top: 21px;
+        }
+      }
+      .form {
+        margin-right: 55px;
+        &__body {
+          .title-3 {
+            margin-top: 5px;
+          }
+          .title-1 {
+            margin-top: 21px;
+          }
+          .textarea {
+            resize: none;
+          }
+          .button {
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+    .red-line {
+      margin-top: 34px;
+      padding: 6px 0;
+      background: $brand-color;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        .social {
+          display: flex;
+          height: 20px;
+          .image {
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+.our-team {
+    padding: 60px 0 95px 0;
+    .heading-wrapper {
+      display: inline-block;
+    }
+    .title-1 {
+      margin-left: 115px;
+      display: inline-block;
+    }
+    
+    .swiper-container {
+      margin-top: 35px;
+      .swiper-wrapper {
+        align-items: flex-end;
+      }
+      .swiper-slide {
+        .name {
+          margin-top: 25px;
+        }
+        .languages {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
