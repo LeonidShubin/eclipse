@@ -44,7 +44,6 @@ const appModal = {
         });
     },
     open() {
-        // document.body.style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
         document.body.style.overflow = "hidden";
 
         this.el.classList.add("modal--fade-in");
@@ -52,7 +51,6 @@ const appModal = {
     },
     close() {
         document.body.style.overflow = '';
-        // document.body.style.paddingRight = "initial";
         
         this.el.classList.add("modal--fade-out");
         this.el.classList.remove("modal--fade-in");
