@@ -1,4 +1,4 @@
-const offerSwiper = new Swiper(".special-offer .swiper-container", {
+new Swiper(".special-offer .swiper-container", {
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -6,7 +6,7 @@ const offerSwiper = new Swiper(".special-offer .swiper-container", {
   }
 });
 
-const whyUsSwiper = new Swiper(".why-us .swiper-container", {
+new Swiper(".why-us .swiper-container", {
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -14,7 +14,7 @@ const whyUsSwiper = new Swiper(".why-us .swiper-container", {
   }
 });
 
-const teamSwiper = new Swiper(".our-team .swiper-container", {
+new Swiper(".our-team .swiper-container", {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 35,

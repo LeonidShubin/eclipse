@@ -9,7 +9,7 @@
 @import "sections/special-offer";
 @import "sections/why-us";
 @import "sections/analysis";
-@import "sections/resons";
+@import "sections/reasons";
 @import "sections/our-team";
 @import "sections/footer";
 
@@ -45,13 +45,13 @@ a {
         text-align: center;
       }
     }
-    .achivments {
+    .achievements {
       margin: auto;
     }
     .headline-1 {
       font-size: 40px;
     }
-    .achivments__list {
+    .achievements__list {
       justify-content: center;
     }
     .fob {
@@ -96,6 +96,17 @@ a {
 }
 
 @media (max-width: 700px) {
+  .menu {
+    .nav {
+      flex-direction: column;
+      &__item {
+        margin: 3px 0;
+      }
+    }
+    .image {
+      display: none;
+    }
+  }
   .special-offer {
     .swiper-slide {
       flex-direction: column-reverse;
@@ -109,7 +120,7 @@ a {
   .why-us {
     .percent {
       margin-right: 0 !important;
-      font-size: 80px !important;
+      font-size: 53px !important;
     }
   }
   .analysis {
@@ -152,15 +163,15 @@ a {
     padding: 20px;
   }
   [class*="text"] {
-    font-size: 14px;
+    font-size: 12px;
   }
   [class*="title"] {
-    font-size: 18px;
+    font-size: 14px;
   }
   [class*="heading"] {
-    font-size: 22px;
+    font-size: 20px;
   }
   [class*="headline"] {
-    font-size: 26px;
+    font-size: 24px;
   }
 }

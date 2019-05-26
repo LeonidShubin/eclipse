@@ -479,16 +479,16 @@ input[type=button] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    .header__main .achivments {
+    .header__main .achievements {
       max-width: 725px; }
-      .header__main .achivments .title-2 {
+      .header__main .achievements .title-2 {
         margin-bottom: 9px; }
-      .header__main .achivments .heading-1 {
+      .header__main .achievements .heading-1 {
         margin-bottom: 9px;
         font-weight: 300; }
-      .header__main .achivments .headline-1 {
+      .header__main .achievements .headline-1 {
         margin-bottom: 109px; }
-      .header__main .achivments__list {
+      .header__main .achievements__list {
         display: flex;
         flex-wrap: wrap; }
     .header__main .fob {
@@ -502,7 +502,7 @@ input[type=button] {
         font-weight: 300; }
       .header__main .fob .button {
         margin-top: 32px; }
-  .header .achivment {
+  .header .achievement {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,7 +510,7 @@ input[type=button] {
     padding: 0 15px;
     margin-bottom: 30px;
     text-align: center; }
-    .header .achivment .image {
+    .header .achievement .image {
       width: 65px;
       height: 65px;
       margin-bottom: 14px; }
@@ -689,7 +689,7 @@ input[type=button] {
     grid-template-areas: "image-1 image-1 image-2" "image-3 image-4 image-5" "image-6 image-4 image-7"; }
     .reasons .collage .image {
       position: relative; }
-      .reasons .collage .image .reson {
+      .reasons .collage .image .reason {
         position: absolute;
         top: 0;
         right: 0;
@@ -702,10 +702,10 @@ input[type=button] {
         opacity: 0;
         transition: opacity 0.5s;
         cursor: default; }
-        .reasons .collage .image .reson p {
+        .reasons .collage .image .reason p {
           margin: auto;
           line-height: 1.2em; }
-        .reasons .collage .image .reson:hover {
+        .reasons .collage .image .reason:hover {
           opacity: 0.8; }
       .reasons .collage .image__1 {
         grid-area: image-1;
@@ -800,7 +800,7 @@ input[type=button] {
       text-align: right; }
       .footer .container .contacts .title-3 {
         font-weight: 500; }
-      .footer .container .contacts .adress {
+      .footer .container .contacts .addresss {
         margin-top: 21px; }
     .footer .container .form {
       margin-right: 55px; }
@@ -849,11 +849,11 @@ a {
       align-items: center;
       max-width: 100%;
       text-align: center; }
-  .header .achivments {
+  .header .achievements {
     margin: auto; }
   .header .headline-1 {
     font-size: 40px; }
-  .header .achivments__list {
+  .header .achievements__list {
     justify-content: center; }
   .header .fob {
     margin: 0 auto; }
@@ -880,13 +880,19 @@ a {
       margin-right: 0; } }
 
 @media (max-width: 700px) {
+  .menu .nav {
+    flex-direction: column; }
+    .menu .nav__item {
+      margin: 3px 0; }
+  .menu .image {
+    display: none; }
   .special-offer .swiper-slide {
     flex-direction: column-reverse; }
   .special-offer .advantages .heading-1 {
     text-align: center; }
   .why-us .percent {
     margin-right: 0 !important;
-    font-size: 80px !important; }
+    font-size: 53px !important; }
   .analysis .cards {
     flex-wrap: wrap; }
     .analysis .cards .card {
@@ -906,10 +912,10 @@ a {
   .modal__body {
     padding: 20px; }
   [class*="text"] {
-    font-size: 14px; }
+    font-size: 12px; }
   [class*="title"] {
-    font-size: 18px; }
+    font-size: 14px; }
   [class*="heading"] {
-    font-size: 22px; }
+    font-size: 20px; }
   [class*="headline"] {
-    font-size: 26px; } }
+    font-size: 24px; } }
