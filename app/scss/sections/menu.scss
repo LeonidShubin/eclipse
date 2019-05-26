@@ -1,22 +1,24 @@
 .menu {
-    padding: 4px 0;
-    .container {
+  padding: 4px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .image {
+      height: 42px;
+      margin-right: 10px;
+    }
+
+    .nav {
       display: flex;
+      flex: 0 1 600px;
+      align-items: center;
       justify-content: space-between;
-      
-      .image {
-        height: 42px;
-      }
-      
-      .nav {
-        display: flex;
-        flex: 0 1 600px;
-        align-items: center;
-        justify-content: space-between;
-        
-        &__item--active {
-          color: $brand-color;
-        }
+      text-align: center;
+
+      &__item--active {
+        color: $brand-color;
       }
     }
   }
+}

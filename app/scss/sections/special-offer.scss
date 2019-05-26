@@ -1,70 +1,75 @@
 .special-offer {
-    padding-bottom: 60px;
-    .preview {
-      margin-top: 60px;
-      
-      .headline-1 {
-        margin-top: 13px;
-      }
-      
-      .heading-1 {
-        margin-top: 8px;
-      }
-      
-      .title-1 {
-        margin-top: 22px;
-      }
+  padding-bottom: 60px;
+  border-bottom: 2px dashed #aaa;
+
+  .preview {
+    margin-top: 60px;
+
+    .headline-1 {
+      margin-top: 13px;
     }
-    
-    .swiper-container {
-      margin-top: 25px;
-      .swiper-slide {
-        display: flex;
-        flex-wrap: nowrap;
-        .image {
-          flex: 0 1 496px;
-        }
-        .content {
-          margin-left: 43px;
-          
-          .slide-number {
-            margin-top: 39px;
-            font-size: 60px;
-            font-weight: 100;
-            color: #ccc;
-          }
-          .title-1 {
-            margin-top: 44px;
-            max-width: 350px;
-            color: $dark-color;
-          }
-        }
-      }
+
+    .heading-1 {
+      margin-top: 8px;
     }
-    
-    .advantages {
-      margin-top: 67px;
-      
-      .cards {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        
-        .card {
-          margin: 10px 10px 0 10px;
-          flex: 0 1 290px;
-          text-align: center;
-          
-          .title-1 {
-            margin-top: 30px;
-          }
-        }
-      }
-    }
-    
-    .button-wrapper {
-      margin: 40px auto 0 auto;
-      width: 230px;
+
+    .title-1 {
+      margin-top: 22px;
     }
   }
+
+  .swiper-container {
+    margin-top: 25px;
+    border-bottom: 1px solid #ccc;
+    .swiper-slide {
+      display: flex;
+      flex-wrap: nowrap;
+      .image {
+        margin-top: 20px;
+        flex: 1 1 auto;
+      }
+      .content {
+        margin-left: 43px;
+        flex: 0 1 auto;
+
+        .slide-number {
+          margin-top: 39px;
+          font-size: 60px;
+          font-weight: 100;
+          color: #ccc;
+        }
+        .title-1 {
+          margin-top: 44px;
+          max-width: 350px;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+
+  .advantages {
+    margin-top: 67px;
+
+    .cards {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .card {
+        margin: 10px 10px 0 10px;
+        flex: 0 1 290px;
+        text-align: center;
+
+        .title-1 {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .button-wrapper {
+    margin: 40px auto 0 auto;
+    width: 230px;
+  }
+}

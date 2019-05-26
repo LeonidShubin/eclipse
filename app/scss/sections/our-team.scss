@@ -1,25 +1,94 @@
 .our-team {
-    padding: 60px 0 95px 0;
-    .heading-wrapper {
-      display: inline-block;
+  padding: 60px 0 95px 0;
+  .heading-wrapper {
+    margin-right: 115px;
+    display: inline-block;
+  }
+  .title-1 {
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  .swiper-container {
+    margin-top: 35px;
+    .swiper-wrapper {
+      align-items: flex-end;
     }
-    .title-1 {
-      margin-left: 115px;
-      display: inline-block;
+    .swiper-slide {
+      .image {
+        height: 400px;
+      }
+      .name {
+        margin-top: 25px;
+      }
+      .languages {
+        margin-top: 10px;
+      }
     }
-    
-    .swiper-container {
-      margin-top: 35px;
-      .swiper-wrapper {
-        align-items: flex-end;
+    .renat {
+      .image {
+        background: url(../images/our-team/renat.png) top/cover
+          no-repeat;
       }
-      .swiper-slide {
-        .name {
-          margin-top: 25px;
-        }
-        .languages {
-          margin-top: 10px;
-        }
+    }
+    .lisa {
+      .image {
+        background: url(../images/our-team/elizaveta.png) top/cover
+          no-repeat;
       }
+    }
+    .eugen {
+      .image {
+        background: url(../images/our-team/eugene.png) top/cover
+          no-repeat;
+      }
+    }
+    .alex {
+      .image {
+        background: url(../images/our-team/alex.png) top/cover
+          no-repeat;
+      }
+    }
+    .barbara {
+      .image {
+        background: url(../images/our-team/barbara.png) top/cover
+          no-repeat;
+      }
+    }
+    .vadim {
+      .image {
+        background: url(../images/our-team/vadim.png) top/cover
+          no-repeat;
+      }
+    }
+    .kriss {
+      .image {
+        background: url(../images/our-team/christina.png) top/cover
+          no-repeat;
+      }
+    }
+    .mark {
+      .image {
+        background: url(../images/our-team/mark.png) top/cover
+          no-repeat;
+      }
+    }
+    .sarah {
+      .image {
+        background: url(../images/our-team/sara.png) top/cover
+          no-repeat;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 85%;
+      width: 27px;
+      height: 27px;
+      background-image: url(../images/helpers/arrow.png);
+      background-size: 10px 16px;
+    }
+    .swiper-button-prev {
+      transform: rotate(180deg);
     }
   }
+}

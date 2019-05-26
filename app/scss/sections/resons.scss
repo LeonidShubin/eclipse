@@ -1,65 +1,103 @@
 .reasons {
-    padding: 60px 0;
-    background: #bcaea3
-      url(https://lh3.google.com/u/0/d/1rZwgjMMfJPBwtA6T5zoGG3Jff1pn-Zvs=w1356-h633-iv1)
-      center/cover no-repeat;
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    .collage { 
-        display: grid;
-        grid-template-rows: repeat(3, minmax(20px, 256px));
-        grid-template-columns: repeat(3, minmax(20px, 256px));
-        grid-template-areas:
-          "image-1 image-1 image-2"
-          "image-3 image-4 image-5"
-          "image-6 image-4 image-7";
-  
-        .image {
-          &__1 {
-            grid-area: image-1;
-          }
-          &__2 {
-            grid-area: image-2;
-          }
-          &__3 {
-            grid-area: image-3;
-          }
-          &__4 {
-            grid-area: image-4;
-          }
-          &__5 {
-            grid-area: image-5;
-          }
-          &__6 {
-            grid-area: image-6;
-          }
-          &__7 {
-            grid-area: image-7;
-          }
+  padding: 60px 0;
+  background: #bcaea3 url(../images/reasons/reasons-bg.png) center/cover
+    no-repeat;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .collage {
+    margin-right: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(20px, 256px));
+    grid-template-columns: repeat(3, minmax(20px, 256px));
+    grid-template-areas:
+      "image-1 image-1 image-2"
+      "image-3 image-4 image-5"
+      "image-6 image-4 image-7";
+
+    .image {
+      position: relative;
+      .reson {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        background: $brand-color;
+        opacity: 0;
+        transition: opacity 0.5s;
+        cursor: default;
+
+        p {
+          margin: auto;
+          line-height: 1.2em;
+        }
+
+        &:hover {
+          opacity: 0.8;
         }
       }
-    
-    .content {
-      flex: 0 1 340px;
-      .title-1 {
-        margin-top: 44px;
+      &__1 {
+        grid-area: image-1;
+        background: url(../images/reasons/img-1.png) center/cover
+          no-repeat;
       }
-      .form {
-        margin-top: 40px;
-        &__body {
-          .title-1 {
-            margin-top: 36px;
-          }
-          .inputs {
-            margin-top: 68px;
-          }
-          .button {
-            margin-top: 37px;
-          }
+      &__2 {
+        grid-area: image-2;
+        background: url(../images/reasons/img-2.png) center/cover
+          no-repeat;
+      }
+      &__3 {
+        grid-area: image-3;
+        background: url(../images/reasons/img-3.png) center/cover
+          no-repeat;
+      }
+      &__4 {
+        grid-area: image-4;
+        background: url(../images/reasons/img-4.png) center/cover
+          no-repeat;
+      }
+      &__5 {
+        grid-area: image-5;
+        background: url(../images/reasons/img-5.png) center/cover
+          no-repeat;
+      }
+      &__6 {
+        grid-area: image-6;
+        background: url(../images/reasons/img-6.png) center/cover
+          no-repeat;
+      }
+      &__7 {
+        grid-area: image-7;
+        background: url(../images/reasons/img-7.png) center/cover
+          no-repeat;
+      }
+    }
+  }
+
+  .content {
+    flex: 0 1 340px;
+    .title-1 {
+      margin-top: 44px;
+    }
+    .form {
+      margin-top: 40px;
+      &__body {
+        .title-1 {
+          margin-top: 36px;
+        }
+        .inputs {
+          margin-top: 68px;
+        }
+        .button {
+          margin-top: 37px;
         }
       }
     }
   }
+}

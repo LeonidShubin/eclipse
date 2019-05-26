@@ -1,17 +1,17 @@
-@import 'helpers/reset';
-@import 'helpers/variables';
-@import 'helpers/typography';
-@import 'helpers/components';
+@import "helpers/reset";
+@import "helpers/variables";
+@import "helpers/typography";
+@import "helpers/components";
 
-@import 'sections/header';
-@import 'sections/menu';
-@import 'sections/horse';
-@import 'sections/special-offer';
-@import 'sections/why-us';
-@import 'sections/analysis';
-@import 'sections/resons';
-@import 'sections/our-team';
-@import 'sections/footer';
+@import "sections/header";
+@import "sections/menu";
+@import "sections/horse";
+@import "sections/special-offer";
+@import "sections/why-us";
+@import "sections/analysis";
+@import "sections/resons";
+@import "sections/our-team";
+@import "sections/footer";
 
 body {
   &,
@@ -27,4 +27,140 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__top {
+      justify-content: center;
+      .info {
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    .achivments {
+      margin: auto;
+    }
+    .headline-1 {
+      font-size: 40px;
+    }
+    .achivments__list {
+      justify-content: center;
+    }
+    .fob {
+      margin: 0 auto;
+    }
+  }
+  .why-us {
+    .horizontal-form__body {
+      flex-direction: column;
+      align-items: center;
+      clip-path: none;
+      &::before,
+      &::after {
+        display: none;
+      }
+      .content {
+        flex: 0 1 auto;
+      }
+      .inputs {
+        margin-top: 15px;
+      }
+      .add-file > * {
+        margin: 10px;
+      }
+    }
+  }
+  .reasons {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .form {
+        margin: 40px 0;
+        &__body {
+          margin: auto;
+        }
+      }
+      .collage {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .special-offer {
+    .swiper-slide {
+      flex-direction: column-reverse;
+    }
+    .advantages {
+      .heading-1 {
+        text-align: center;
+      }
+    }
+  }
+  .why-us {
+    .percent {
+      margin-right: 0 !important;
+      font-size: 80px !important;
+    }
+  }
+  .analysis {
+    .cards {
+      flex-wrap: wrap;
+      .card {
+        margin-top: 15px;
+      }
+    }
+  }
+  .reasons {
+    .collage {
+      grid-template-rows: repeat(5, minmax(20px, 256px));
+      grid-template-columns: repeat(2, minmax(20px, 256px));
+      grid-template-areas:
+        "image-1 image-1"
+        "image-2 image-7"
+        "image-4 image-5"
+        "image-4 image-6"
+        "image-3 image-3";
+    }
+  }
+  .our-team {
+    .heading-wrapper {
+      margin-right: 85px;
+    }
+  }
+  .footer {
+    .container {
+      flex-wrap: wrap;
+      .contacts {
+        margin-bottom: 40px;
+      }
+      .form {
+        margin: auto;
+      }
+    }
+  }
+  .modal__body {
+    padding: 20px;
+  }
+  [class*="text"] {
+    font-size: 14px;
+  }
+  [class*="title"] {
+    font-size: 18px;
+  }
+  [class*="heading"] {
+    font-size: 22px;
+  }
+  [class*="headline"] {
+    font-size: 26px;
+  }
 }

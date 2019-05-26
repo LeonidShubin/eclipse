@@ -1,230 +1,214 @@
 .container {
-    margin: 0 auto;
-    max-width: $breakpoint-desktop;
-}
-  
-@media (max-width: $breakpoint-desktop) {
-    .container {
-        padding: 0 16px;
-    }
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        max-height: 100%;
-        max-width: 100%;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 .button {
-    padding: 12px 9px;
-    width: 230px;
-    cursor: pointer;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 5px 0 rgba(1, 1, 1, 0.75);
-    text-transform: uppercase;
-    background-color: $brand-color;
-    font-size: 15px;
-    color: $white-color;
-    transition: background-color 0.2s, box-shadow 0.2s;
-    &:hover {
-        background-color: lighten($brand-color, 12%);
-    }
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        box-shadow: 0 0 2px 0 rgba(1, 1, 1, 0.75);
-    }
+  padding: 12px 9px;
+  width: 230px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(1, 1, 1, 0.75);
+  text-transform: uppercase;
+  background-color: $brand-color;
+  font-size: 15px;
+  color: $white-color;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  &:hover {
+    background-color: lighten($brand-color, 12%);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: 0 0 2px 0 rgba(1, 1, 1, 0.75);
+  }
 }
 
 .form {
-    filter: drop-shadow(2px 1px 10px rgba(1, 2, 2, 0.5));
-    &__body {
-      position: relative;
-      width: 280px;
-      padding: 50px 20px 30px 22px;
-      border: 1px solid $brand-color;
-      background: #fff;
-      clip-path: polygon(
-        0 0,
-        0% 100%,
-        100% 100%,
-        100% 0%,
-        55% 0,
-        50% 13px,
-        45% 0
-      );
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        width: 22px;
-        height: 1px;
-        top: 5px;
-        left: calc(50% - 19px);
-        position: absolute;
-        background-color: $brand-color;
-        transform: rotate(43deg);
-      }
-      &:after {
-        left: calc(50% - 3px);
-        transform: rotate(-43deg);
-      }
-    }
-  }
-  
-  .horizontal-form {
-      position: relative;
-      filter: drop-shadow(2px 1px 10px rgba(1, 2, 2, 0.5));
-      &__body {
-        max-width: 975px;
-        padding: 37px 40px 43px 50px;
-        border: 1px solid $brand-color;
-        background: #fff;
-        clip-path: polygon(
-          0 0,
-          0 45%,
-          13px 50%,
-          0 55%,
-          0% 100%,
-          100% 100%,
-          100% 0%,
-          0 0
-        );
-        &:before,
-        &:after {
-          content: "";
-          display: block;
-          width: 18px;
-          height: 1px;
-          top: calc(50% - 6px);
-          left: -1px;
-          position: absolute;
-          background-color: $brand-color;
-          transform: rotate(43deg);
-        }
-        &:after {
-          top: calc(50% + 5px);
-          transform: rotate(-43deg);
-        }
-      }
-    }
-  
-  .input {
-    &__element {
-      width: 230px;
-      padding: 11px 11px 12px 30px;
-      border-radius: 2px;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      transition: border 0.2s;
-      font-size: 14px;
-      font-weight: 300;
-      &:focus {
-        border: 1px solid rgba(0, 0, 0, 0.75);
-        outline: none;
-      }
-      &::placeholder {
-        font-size: 14px;
-        font-weight: 300;
-      }
-    }
-  
-    &:before {
-      position: relative;
-      top: 25px;
-      left: 16px;
+  filter: drop-shadow(2px 1px 10px rgba(1, 2, 2, 0.5));
+  &__body {
+    position: relative;
+    width: 280px;
+    padding: 50px 20px 30px 22px;
+    border: 1px solid $brand-color;
+    background: #fff;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0%, 55% 0, 50% 13px, 45% 0);
+    &:before,
+    &:after {
       content: "";
       display: block;
-      width: 5px;
-      height: 10px;
-      background: url(https://lh3.google.com/u/0/d/1FH6QYhW6z4xGzeYPFLIP0x2gpWGEtS8_=w1853-h976-iv1)
-        center/cover no-repeat;
+      width: 22px;
+      height: 1px;
+      top: 5px;
+      left: calc(50% - 19px);
+      position: absolute;
+      background-color: $brand-color;
+      transform: rotate(43deg);
+    }
+    &:after {
+      left: calc(50% - 3px);
+      transform: rotate(-43deg);
     }
   }
-  
-  .swiper-pagination-bullet {
-        position: relative;
-        height: 10px;
-        width: 10px;
-        background: transparent;
-        transition: background-color 0.2s;
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          margin: auto;
-          height: 6px;
-          width: 6px;
-          border: 1px solid #999;
-          border-radius: 50%;
-        }
-        &-active {
-          background: $brand-color;
-        }
-      }
+}
 
-      .modal {
-        position: fixed;
-        z-index: -99;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        display: flex;
-        visibility: hidden;
-        padding: 16px;
-        background-color: rgba(0,0,0,.5);
-        overflow-y: auto;
-        &--fade-in {
-            animation: modalFadeIn .5s forwards;
-        }
-        &--fade-out {
-            animation: modalFadeOut .5s forwards;
-        }
-        &__body {
-            position: relative;
-            max-width: 645px;
-            margin: auto;
-            padding: 32px;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15),
-                0 14px 28px 0 rgba(0, 0, 0, 0.15);
-        }
+.horizontal-form {
+  filter: drop-shadow(2px 1px 10px rgba(1, 2, 2, 0.5));
+  &__body {
+    position: relative;
+    max-width: 975px;
+    padding: 37px 40px 43px 50px;
+    border: 1px solid $brand-color;
+    background: #fff;
+    clip-path: polygon(0 0, 0 45%, 13px 50%, 0 55%, 0% 100%, 100% 100%, 100% 0%, 0 0);
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 1px;
+      top: calc(50% - 6px);
+      left: -1px;
+      position: absolute;
+      background-color: $brand-color;
+      transform: rotate(43deg);
     }
+    &:after {
+      top: calc(50% + 5px);
+      transform: rotate(-43deg);
+    }
+  }
+}
 
-    @keyframes modalFadeIn {
-        from {
-            visibility: visible;
-            z-index: -99;
-            opacity: 0;
-        }
-        
-        to {
-            visibility: visible;
-            z-index: 99;
-            opacity: 1;
-        }
+.input {
+  &__element {
+    width: 230px;
+    padding: 11px 11px 12px 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: border 0.2s;
+    font-size: 14px;
+    font-weight: 300;
+    &:focus {
+      border: 1px solid rgba(0, 0, 0, 0.75);
+      outline: none;
     }
-    
-    @keyframes modalFadeOut {
-        from {
-            visibility: visible;
-            z-index: 99;
-            opacity: 1;
-        }
-        
-        to {
-            visibility: hidden;
-            z-index: -99;
-            opacity: 0;
-        }
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 300;
     }
+  }
+
+  &:before {
+    position: relative;
+    top: 25px;
+    left: 16px;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    background: url(../images/helpers/arrow.png) center/cover
+      no-repeat;
+  }
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background: transparent;
+  transition: background-color 0.2s;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 6px;
+    width: 6px;
+    border: 1px solid #999;
+    border-radius: 50%;
+  }
+  &-active {
+    background: $brand-color;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: -99;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  &--fade-in {
+    animation: fadeIn 0.5s forwards;
+  }
+  &--fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  &__body {
+    position: relative;
+    max-width: 390px;
+    margin: auto;
+    padding: 57px 80px 73px 80px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15), 0 14px 28px 0 rgba(0, 0, 0, 0.15);
+
+    .title-2 {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $brand-color;
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    visibility: visible;
+    z-index: -99;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    z-index: 99;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    visibility: visible;
+    z-index: 99;
+    opacity: 1;
+  }
+
+  to {
+    visibility: hidden;
+    z-index: -99;
+    opacity: 0;
+  }
+}
