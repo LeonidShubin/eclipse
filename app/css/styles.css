@@ -330,13 +330,13 @@ input[type=button] {
       width: 18px;
       height: 1px;
       top: calc(50% - 6px);
-      left: -1px;
+      left: -3px;
       position: absolute;
       background-color: #cb0e17;
       transform: rotate(43deg); }
     .horizontal-form__body:after {
-      top: calc(50% + 5px);
-      transform: rotate(-43deg); }
+      top: calc(50% + 6px);
+      transform: rotate(-41deg); }
 
 .input__element {
   width: 230px;
